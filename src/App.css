@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+body {
+  background-color: #f4f7f8; /* Warna latar belakang */
+  font-family: 'Arial', sans-serif; /* Font keseluruhan */
+  margin: 0; /* Menghapus margin default */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 600px; /* Atur lebar maksimum */
+  margin: 40px auto; /* Pusatkan konten di tengah halaman */
+  padding: 20px; /* Tambahkan padding */
+  background-color: #fff; /* Warna latar belakang kontainer */
+  border-radius: 8px; /* Sudut melengkung */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1, h2 {
+  text-align: left; /* Judul rata kiri */
+  color: #333; /* Warna teks */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; /* Mengatur form dalam kolom */
+  margin-bottom: 20px; /* Spasi di bawah form */
+}
+
+input {
+  margin-bottom: 10px; /* Spasi di bawah input */
+  padding: 12px; /* Tambahkan padding pada input */
+  border: 1px solid #ccc; /* Border pada input */
+  border-radius: 5px; /* Sudut melengkung */
+  font-size: 16px; /* Ukuran font */
+  transition: border-color 0.3s; /* Transisi pada border */
+}
+
+input:focus {
+  border-color: #3498db; /* Ubah warna border saat fokus */
+  outline: none; /* Menghapus outline default */
+}
+
+button {
+  padding: 12px; /* Tambahkan padding pada button */
+  border: none; /* Hapus border */
+  border-radius: 5px; /* Sudut melengkung */
+  background-color: #3498db; /* Warna latar belakang */
+  color: white; /* Warna teks */
+  cursor: pointer; /* Tampilkan pointer saat hover */
+  font-size: 16px; /* Ukuran font */
+  transition: background-color 0.3s; /* Transisi pada warna latar belakang */
+}
+
+button:hover {
+  background-color: #2980b9; /* Warna saat hover */
+}
+
+ul {
+  list-style-type: none; /* Menghapus bullet pada list */
+  padding: 0; /* Menghapus padding pada list */
+}
+
+li {
+  padding: 10px 0; /* Spasi antara item */
+  border-bottom: 1px solid #eee; /* Garis bawah setiap item */
+  text-align: left; /* Pastikan item rata kiri */
+  transition: background-color 0.3s; /* Transisi pada latar belakang item */
+}
+
+li:hover {
+  background-color: #f9f9f9; /* Warna latar belakang saat hover */
+}
+
+.spinner {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100px; /* Atur tinggi sesuai kebutuhan */
 }
 
-.App-link {
-  color: #61dafb;
+.loading {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 40px; /* Ukuran spinner */
+  height: 40px; /* Ukuran spinner */
+  animation: spin 1s linear infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

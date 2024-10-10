@@ -14,7 +14,7 @@ const firebaseConfig = {
   storageBucket: "fullstack-birumuda.appspot.com",
   messagingSenderId: "14031952623",
   appId: "1:14031952623:web:f5421a40d210cea893991a",
-  measurementId: "G-9W7NT0DDHE"
+  measurementId: "G-9W7NT0DDHE" 
 };
 
 // Initialize Firebase
@@ -25,3 +25,4 @@ const analytics = getAnalytics(app);
 const db = getFirestore(app);
 
 export { db };
+

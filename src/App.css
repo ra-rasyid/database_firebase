@@ -1,87 +1,113 @@
+/* Gaya keseluruhan untuk body */
 body {
-  background-color: #f4f7f8; /* Warna latar belakang */
-  font-family: 'Arial', sans-serif; /* Font keseluruhan */
-  margin: 0; /* Menghapus margin default */
+  background-color: #eaf2f8; /* Warna latar belakang biru muda */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+/* Gaya untuk container utama */
 .container {
-  max-width: 600px; /* Atur lebar maksimum */
-  margin: 40px auto; /* Pusatkan konten di tengah halaman */
-  padding: 20px; /* Tambahkan padding */
-  background-color: #fff; /* Warna latar belakang kontainer */
-  border-radius: 8px; /* Sudut melengkung */
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #8eb8cd; /* Warna latar belakang kontainer */
+  border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
 }
 
-h1, h2 {
-  text-align: left; /* Judul rata kiri */
-  color: #333; /* Warna teks */
+/* Gaya untuk judul (h1 dan h2) */
+h1 {
+  color: #2c3e50; /* Warna teks gelap */
+  font-size: 2.5rem; /* Ukuran font lebih besar */
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Ubah teks menjadi kapital */
+  letter-spacing: 1px; /* Jarak antar huruf */
 }
 
+h2 {
+  color: #2980b9; /* Warna teks biru */
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Gaya untuk form */
 form {
   display: flex;
-  flex-direction: column; /* Mengatur form dalam kolom */
-  margin-bottom: 20px; /* Spasi di bawah form */
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
+/* Gaya untuk input form */
 input {
-  margin-bottom: 10px; /* Spasi di bawah input */
-  padding: 12px; /* Tambahkan padding pada input */
-  border: 1px solid #ccc; /* Border pada input */
-  border-radius: 5px; /* Sudut melengkung */
-  font-size: 16px; /* Ukuran font */
-  transition: border-color 0.3s; /* Transisi pada border */
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 2px solid #bdc3c7; /* Border abu-abu */
+  border-radius: 8px; /* Sudut melengkung lebih besar */
+  background-color: #ecf0f1; /* Latar belakang abu muda */
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
 }
 
+/* Gaya input saat fokus */
 input:focus {
-  border-color: #3498db; /* Ubah warna border saat fokus */
-  outline: none; /* Menghapus outline default */
+  border-color: #3498db; /* Border biru saat input aktif */
+  background-color: #ffffff; /* Latar belakang berubah putih saat fokus */
+  outline: none;
 }
 
+/* Gaya untuk tombol */
 button {
-  padding: 12px; /* Tambahkan padding pada button */
-  border: none; /* Hapus border */
-  border-radius: 5px; /* Sudut melengkung */
-  background-color: #3498db; /* Warna latar belakang */
-  color: white; /* Warna teks */
-  cursor: pointer; /* Tampilkan pointer saat hover */
-  font-size: 16px; /* Ukuran font */
-  transition: background-color 0.3s; /* Transisi pada warna latar belakang */
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db; /* Warna latar belakang biru */
+  color: #ffffff; /* Warna teks putih */
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase; /* Huruf kapital semua */
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #2980b9; /* Warna saat hover */
+  background-color: #2980b9; /* Biru lebih gelap saat hover */
 }
 
+/* Gaya untuk daftar (ul dan li) */
 ul {
-  list-style-type: none; /* Menghapus bullet pada list */
-  padding: 0; /* Menghapus padding pada list */
+  list-style-type: none;
+  padding: 0;
 }
 
 li {
-  padding: 10px 0; /* Spasi antara item */
-  border-bottom: 1px solid #eee; /* Garis bawah setiap item */
-  text-align: left; /* Pastikan item rata kiri */
-  transition: background-color 0.3s; /* Transisi pada latar belakang item */
+  padding: 10px;
+  border-bottom: 1px solid #bdc3c7;
+  color: #2c3e50; /* Warna teks */
+  text-align: left;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 li:hover {
-  background-color: #f9f9f9; /* Warna latar belakang saat hover */
+  background-color: #eaf2f8; /* Warna latar belakang biru muda saat hover */
+  color: #2980b9; /* Teks biru saat hover */
 }
 
+/* Gaya untuk spinner (indikator loading) */
 .spinner {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px; /* Atur tinggi sesuai kebutuhan */
+  height: 100px;
 }
 
 .loading {
-  border: 8px solid #f3f3f3; /* Light grey */
-  border-top: 8px solid #3498db; /* Blue */
+  border: 8px solid #f3f3f3; /* Warna abu-abu muda */
+  border-top: 8px solid #3498db; /* Warna biru */
   border-radius: 50%;
-  width: 40px; /* Ukuran spinner */
-  height: 40px; /* Ukuran spinner */
+  width: 40px;
+  height: 40px;
   animation: spin 1s linear infinite;
 }
 

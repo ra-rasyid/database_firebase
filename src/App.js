@@ -3,10 +3,11 @@ import { collection, addDoc, getDocs, query, orderBy, serverTimestamp } from 'fi
 import { db } from './firebase';
 import './App.css';
 
+
 function App() {
   const [name, setName] = useState('');
   const [npm, setNpm] = useState('');
-  const [students, setStudents] = useState([]);
+  const [students, setStudents] = useState([]); 
   const [loading, setLoading] = useState(true); // State untuk loading
 
   // Fungsi untuk menambah data ke Firestore dengan timestamp
